@@ -55,7 +55,7 @@ public final class XdocGenerator {
             final File outputFile = new File(pathToFile.replace(".template", ""));
             final File tempFile = new File(temporaryFolder, outputFile.getName());
             tempFile.deleteOnExit();
-            final XdocsTemplateSinkFactory sinkFactory = (XdocsTemplateSinkFactory)
+            final XdocsNewTemplateSinkFactory sinkFactory = (XdocsNewTemplateSinkFactory)
                     plexus.lookup(SinkFactory.ROLE, XDOCS_TEMPLATE_HINT);
             final Sink sink = sinkFactory.createSink(tempFile.getParentFile(),
                     tempFile.getName(), String.valueOf(StandardCharsets.UTF_8));

@@ -32,7 +32,7 @@ import org.codehaus.plexus.component.annotations.Component;
  * <a href="https://github.com/checkstyle/checkstyle/issues/13426">#13426</a> is resolved.
  */
 @Component(role = SinkFactory.class, hint = "xdocs-template")
-public class XdocsTemplateSinkFactory extends AbstractTextSinkFactory {
+public class XdocsNewTemplateSinkFactory extends AbstractTextSinkFactory {
 
     /**
      * Create a Sink instance.
